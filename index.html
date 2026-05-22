@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Spice. - Authentic Sri Lankan Restaurant</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
+    <!-- Topbar -->
+    <div class="topbar py-2 d-none d-lg-block border-bottom bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-muted fs-7">
+                    <i class="fa-solid fa-location-dot me-2 text-primary-custom"></i> Location: No 45, Galle Road, Colombo 03, LK
+                </div>
+                <div class="col-md-6 text-end fs-7 topbar-links">
+                    <a href="#contact" class="text-muted text-decoration-none me-3 hover-primary-custom transition-all">Make a Reservation</a>
+                    <a href="#menu" class="text-muted text-decoration-none me-3 hover-primary-custom transition-all">Order Online</a>
+                    <a href="#" class="text-muted text-decoration-none hover-primary-custom transition-all">My Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3 shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand logo-text fs-2 fw-bold d-flex align-items-center" href="#home">
+                <i class="fa-solid fa-leaf text-primary-custom me-2 fs-3"></i> Ceylon Spice.
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3 fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <!-- Mobile only icons -->
+                <div class="d-flex d-lg-none mt-3 gap-3 justify-content-center">
+                    <a href="#" class="text-dark"><i class="fa-solid fa-magnifying-glass fs-5"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-solid fa-basket-shopping fs-5"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-regular fa-user fs-5"></i></a>
+                </div>
+            </div>
+
+            <!-- Icons (Desktop) -->
+            <div class="d-none d-lg-flex align-items-center gap-4 header-icons">
+                <a href="#" class="text-dark"><i class="fa-solid fa-magnifying-glass fs-5"></i></a>
+                <a href="#" class="text-dark position-relative">
+                    <i class="fa-solid fa-basket-shopping fs-5"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-custom" style="font-size: 0.6rem;">3</span>
+                </a>
+                <a href="#" class="text-dark"><i class="fa-regular fa-user fs-5"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Carousel) -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" style="height: 80vh; min-height: 500px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner h-100">
+            <!-- Slide 1 -->
+            <div class="carousel-item active h-100" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-1.jpg'); background-size: cover; background-position: center;">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-6 col-md-8 hero-content p-5 rounded">
+                            <span class="text-uppercase tracking-wide text-white fw-bold mb-2 d-block fs-7">Authentic Sri Lankan Taste</span>
+                            <h1 class="display-4 fw-bold mb-3 text-white font-heading">TASTE THE PERFECTION</h1>
+                            <p class="lead mb-4 text-white-50 fs-5">Exquisite local and Chinese dishes crafted with passion, using only the finest ingredients.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="#menu" class="btn btn-primary-custom px-5 py-3 text-uppercase fs-7 tracking-wide">View Menu</a>
+                                <a href="#contact" class="btn btn-outline-light px-5 py-3 text-uppercase fs-7 tracking-wide">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-2.jpg'); background-size: cover; background-position: center;">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-6 col-md-8 hero-content p-5 rounded">
+                            <span class="text-uppercase tracking-wide text-white fw-bold mb-2 d-block fs-7">Culinary Journey</span>
+                            <h1 class="display-4 fw-bold mb-3 text-white font-heading">A FEAST FOR SENSES</h1>
+                            <p class="lead mb-4 text-white-50 fs-5">Immerse yourself in a world of extraordinary flavors, spices, and vibrant aromas.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="#menu" class="btn btn-primary-custom px-5 py-3 text-uppercase fs-7 tracking-wide">Explore Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-3.jpg'); background-size: cover; background-position: center;">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-6 col-md-8 hero-content p-5 rounded">
+                            <span class="text-uppercase tracking-wide text-white fw-bold mb-2 d-block fs-7">Elegant Atmosphere</span>
+                            <h1 class="display-4 fw-bold mb-3 text-white font-heading">UNFORGETTABLE MOMENTS</h1>
+                            <p class="lead mb-4 text-white-50 fs-5">The perfect setting for your celebrations, dates, and family gatherings.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="#contact" class="btn btn-primary-custom px-5 py-3 text-uppercase fs-7 tracking-wide">Make Reservation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-4.jpg'); background-size: cover; background-position: center;">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-6 col-md-8 hero-content p-5 rounded">
+                            <span class="text-uppercase tracking-wide text-white fw-bold mb-2 d-block fs-7">Masterful Creations</span>
+                            <h1 class="display-4 fw-bold mb-3 text-white font-heading">ART ON A PLATE</h1>
+                            <p class="lead mb-4 text-white-50 fs-5">Experience culinary artistry brought to life by our award-winning local chefs.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="#chefs" class="btn btn-primary-custom px-5 py-3 text-uppercase fs-7 tracking-wide">Meet the Chefs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-5.jpg'); background-size: cover; background-position: center;">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-6 col-md-8 hero-content p-5 rounded">
+                            <span class="text-uppercase tracking-wide text-white fw-bold mb-2 d-block fs-7">Exquisite Beverages</span>
+                            <h1 class="display-4 fw-bold mb-3 text-white font-heading">PREMIUM BAR</h1>
+                            <p class="lead mb-4 text-white-50 fs-5">A curated selection of signature cocktails and fine wines to perfectly pair with your meal.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="#menu" class="btn btn-primary-custom px-5 py-3 text-uppercase fs-7 tracking-wide">View Drinks</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Benefits Section -->
+    <section id="features" class="benefits-section py-5 border-bottom bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Why Choose Ceylon Spice?</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Experience the finest aspects of Sri Lankan dining with our exceptional services and premium quality offerings.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded-3 h-100 bg-light shadow-sm feature-card">
+                        <div class="benefit-icon text-primary-custom fs-1 mb-3">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Fresh Ingredients</h5>
+                        <p class="text-muted fs-7 mb-0">We source our vegetables, spices, and meats directly from local farmers every morning to ensure maximum freshness and authentic taste in every dish we serve.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded-3 h-100 bg-light shadow-sm feature-card">
+                        <div class="benefit-icon text-primary-custom fs-1 mb-3">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Fast Delivery</h5>
+                        <p class="text-muted fs-7 mb-0">Craving our food at home? Our dedicated delivery fleet ensures your meals arrive piping hot and carefully packaged, right to your doorstep within minutes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded-3 h-100 bg-light shadow-sm feature-card">
+                        <div class="benefit-icon text-primary-custom fs-1 mb-3">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Master Chefs</h5>
+                        <p class="text-muted fs-7 mb-0">Our award-winning culinary team boasts decades of combined experience in five-star hotels, bringing unparalleled expertise and creativity to traditional recipes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="p-4 border rounded-3 h-100 bg-light shadow-sm feature-card">
+                        <div class="benefit-icon text-primary-custom fs-1 mb-3">
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Premium Bar</h5>
+                        <p class="text-muted fs-7 mb-0">Complement your meal with our extensive selection of imported wines, local spirits, and signature cocktails crafted by our expert mixologists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section id="menu" class="products-section py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Popular Dishes</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Explore our customers' most loved Sri Lankan and Chinese dishes, prepared to perfection.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                        <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">POPULAR</span>
+                            <img src="images/kottu.jpg" class="card-img-top rounded" alt="Kottu">
+                            
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <div class="stars text-warning fs-7 mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Spicy Chicken Kottu</a></h5>
+                            <div class="price">
+                                <span class="text-muted text-decoration-line-through me-2">Rs. 1000</span>
+                                <span class="text-primary-custom fw-bold">Rs. 800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                        <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">CHEF'S SPECIAL</span>
+                            <img src="images/rice_curry.jpg" class="card-img-top rounded" alt="Rice and Curry">
+                            
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <div class="stars text-warning fs-7 mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Authentic Rice & Curry</a></h5>
+                            <div class="price">
+                                <span class="text-primary-custom fw-bold">Rs. 650</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                        <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">CHEF'S SPECIAL</span>
+                            <img src="images/fried_rice.jpg" class="card-img-top rounded" alt="Fried Rice">
+                            
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <div class="stars text-warning fs-7 mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Mixed Seafood Fried Rice</a></h5>
+                            <div class="price">
+                                <span class="text-primary-custom fw-bold">Rs. 1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                        <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">POPULAR</span>
+                            <img src="images/cuttlefish.jpg" class="card-img-top rounded" alt="Cuttlefish">
+                            
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <div class="stars text-warning fs-7 mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Hot Butter Cuttlefish</a></h5>
+                            <div class="price">
+                                <span class="text-primary-custom fw-bold">Rs. 1000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Banner CTA -->
+    <section class="custom-banner py-5">
+        <div class="container py-4">
+            <div class="row align-items-center bg-white rounded shadow-sm overflow-hidden border">
+                <div class="col-md-6 p-0 h-100">
+                    <img src="images/banner-interior.jpg" alt="Restaurant Interior" class="img-fluid w-100" style="object-fit: cover; min-height: 400px;">
+                </div>
+                <div class="col-md-6 p-5">
+                    <h2 class="section-title mb-4 fs-2">Book a Table For a Memorable Evening.</h2>
+                    <p class="text-muted mb-4">Experience fine dining like never before. Perfect for romantic dinners, family gatherings, or business lunches with a touch of Sri Lankan hospitality.</p>
+                    <ul class="list-unstyled mb-5 lh-lg text-muted">
+                        <li><i class="fa-solid fa-check text-primary-custom me-2"></i> Cozy and elegant atmosphere</li>
+                        <li><i class="fa-solid fa-check text-primary-custom me-2"></i> Extensive local and imported beverages</li>
+                        <li><i class="fa-solid fa-check text-primary-custom me-2"></i> Live instrumental music on weekends</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary-custom px-4 py-2">Make a Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="featured-section py-5">
+        <div class="container py-4">
+            <div class="text-center mb-4">
+                <h2 class="section-title mb-3">Our Signature Menu</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">A selection of our chef's finest local creations designed to tantalize your taste buds.</p>
+            </div>
+            
+            <!-- View Toggles -->
+            <div class="d-flex justify-content-end mb-3">
+                <div class="btn-group shadow-sm" role="group" aria-label="View toggle">
+                    <button type="button" class="btn btn-primary-custom" id="gridViewBtn" title="Grid View"><i class="fa-solid fa-table-cells-large"></i> Grid</button>
+                    <button type="button" class="btn btn-outline-secondary bg-white text-dark" id="listViewBtn" title="List View"><i class="fa-solid fa-list"></i> List</button>
+                </div>
+            </div>
+            
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-5 custom-tabs border-bottom" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-all" type="button">ALL</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-starters" type="button">LOCAL FAVORITES</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-mains" type="button">MAIN COURSE</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-desserts" type="button">DESSERTS</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- ALL Tab (Top 8 items) -->
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-primary-custom position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm text-white">15% OFF</span>
+                                    <img src="images/string_hoppers.jpg" class="card-img-top rounded" alt="String Hoppers">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">String Hoppers</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 450</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">NEW</span>
+                                    <img src="images/devilled_prawns.jpg" class="card-img-top rounded" alt="Devilled Prawns">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Devilled Prawns</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 1150</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">BEST SELLER</span>
+                                    <img src="images/kottu.jpg" class="card-img-top rounded" alt="Chicken Kottu">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Chicken Kottu</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 800</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">NEW</span>
+                                    <img src="images/watalappan.jpg" class="card-img-top rounded" alt="Watalappan">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Classic Watalappan</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 350</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">SPICY</span>
+                                    <img src="images/hoppers.jpg" class="card-img-top rounded" alt="Hoppers">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Crispy Egg Hoppers</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 350</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">CHEF'S SPECIAL</span>
+                                    <img src="images/rice_curry.jpg" class="card-img-top rounded" alt="Rice and Curry">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Rice & Curry</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 650</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-primary-custom position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm text-white">15% OFF</span>
+                                    <img src="images/fish_rolls.jpg" class="card-img-top rounded" alt="Fish Rolls">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Fish Rolls</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 250</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">BEST SELLER</span>
+                                    <img src="images/cuttlefish.jpg" class="card-img-top rounded" alt="Cuttlefish">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Hot Butter Cuttlefish</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 1000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOCAL FAVORITES Tab (4 items) -->
+                <div class="tab-pane fade" id="pills-starters" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">POPULAR</span>
+                                    <img src="images/string_hoppers.jpg" class="card-img-top rounded" alt="String Hoppers">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">String Hoppers</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 450</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">NEW</span>
+                                    <img src="images/hoppers.jpg" class="card-img-top rounded" alt="Hoppers">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Crispy Egg Hoppers</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 350</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">SPICY</span>
+                                    <img src="images/fish_rolls.jpg" class="card-img-top rounded" alt="Fish Rolls">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Sri Lankan Fish Rolls</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 250</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">SPICY</span>
+                                    <img src="images/kottu.jpg" class="card-img-top rounded" alt="Kottu">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Spicy Chicken Kottu</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 800</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN COURSE Tab (4 items) -->
+                <div class="tab-pane fade" id="pills-mains" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">NEW</span>
+                                    <img src="images/devilled_prawns.jpg" class="card-img-top rounded" alt="Devilled Prawns">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Spicy Devilled Prawns</a></h5>
+                                    <div class="price">
+                                        <span class="text-muted text-decoration-line-through me-2">Rs. 1300</span>
+                                        <span class="text-primary-custom fw-bold">Rs. 1150</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-primary-custom position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm text-white">15% OFF</span>
+                                    <img src="images/rice_curry.jpg" class="card-img-top rounded" alt="Rice and Curry">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Authentic Rice & Curry</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 650</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">BEST SELLER</span>
+                                    <img src="images/fried_rice.jpg" class="card-img-top rounded" alt="Fried Rice">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Mixed Seafood Fried Rice</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 1200</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">BEST SELLER</span>
+                                    <img src="images/cuttlefish.jpg" class="card-img-top rounded" alt="Cuttlefish">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Hot Butter Cuttlefish</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 1000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESSERTS Tab (4 items) -->
+                <div class="tab-pane fade" id="pills-desserts" role="tabpanel">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-primary-custom position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm text-white">15% OFF</span>
+                                    <img src="images/watalappan.jpg" class="card-img-top rounded" alt="Watalappan">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Classic Watalappan</a></h5>
+                                    <div class="price">
+                                        <span class="text-muted text-decoration-line-through me-2">Rs. 450</span>
+                                        <span class="text-primary-custom fw-bold">Rs. 350</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">CHEF'S SPECIAL</span>
+                                    <img src="images/cake.jpg" class="card-img-top rounded" alt="Chocolate Lava Cake">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Chocolate Lava Cake</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 500</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">CHEF'S SPECIAL</span>
+                                    <img src="images/fruitsalad.jpg" class="card-img-top rounded" alt="Fruit Salad">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Fresh Fruit Salad with Ice Cream</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 400</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card card h-100 border-0 bg-transparent reveal-on-scroll">
+                                <div class="position-relative overflow-hidden product-image-wrapper mb-3">
+                                    <span class="badge bg-dark position-absolute top-0 start-0 m-3 z-1 px-2 py-1 shadow-sm">BEST SELLER</span>
+                                    <img src="images/icecream.jpg" class="card-img-top rounded" alt="Vanilla Ice Cream">
+                                    
+                                    <div class="product-description-overlay"><p class="text-white small mb-0 text-center">A perfect blend of traditional spices and fresh ingredients, cooked to absolute perfection for a true taste of Sri Lanka.</p></div>
+                                    <div class="product-actions position-absolute w-100 d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-light rounded-circle shadow-sm"><i class="fa-regular fa-heart"></i></a>
+                                        <a href="#" class="btn btn-primary-custom rounded-pill shadow-sm px-4">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <div class="stars text-warning fs-7 mb-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h5 class="card-title fs-6 fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">Vanilla Bean Ice Cream</a></h5>
+                                    <div class="price"><span class="text-primary-custom fw-bold">Rs. 250</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section py-5 text-center position-relative" style="background-image: url('images/testimonial-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255,0.9);"></div>
+        <div class="container position-relative z-1 py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <i class="fa-solid fa-quote-left fs-1 text-primary-custom mb-4 opacity-75"></i>
+                    <h3 class="fs-4 fw-normal lh-base mb-5 font-heading fst-italic">"Absolutely the best dining experience in Colombo. The local flavors are incredible, the presentation is art, and the service is impeccable. I can't wait to return!"</h3>
+                    <img src="images/user.jpg" alt="User" class="rounded-circle mb-3 border border-3 border-white shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
+                    <h6 class="fw-bold mb-0">Charith N. Silva (Wild Cookbook)</h6>
+                    <small class="text-muted">YouTube Food Vlogger</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Chefs -->
+    <section id="chefs" class="team-section py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Master Chefs</h2>
+                <p class="text-muted">Meet the brilliant minds and skilled hands behind every dish.</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="images/chef1.jpg" alt="Chef 1" class="rounded-circle mb-3 expert-img" style="width: 200px; height: 200px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Saman Kumara</h5>
+                        <p class="text-muted small mb-0">Executive Chef</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="images/chef2.jpg" alt="Chef 2" class="rounded-circle mb-3 expert-img" style="width: 200px; height: 200px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Nayana Fernando</h5>
+                        <p class="text-muted small mb-0">Local Cuisine Expert</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="images/chef3.jpg" alt="Chef 3" class="rounded-circle mb-3 expert-img" style="width: 200px; height: 200px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Ruwan Rajapaksha</h5>
+                        <p class="text-muted small mb-0">Master Pastry Chef</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <img src="images/chef4.jpg" alt="Chef 4" class="rounded-circle mb-3 expert-img" style="width: 200px; height: 200px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Amal Perera</h5>
+                        <p class="text-muted small mb-0">Wok Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Food & Culture Blog</h2>
+                <p class="text-muted">Discover recipes, culinary secrets, and the latest from our kitchen.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm blog-card rounded-3 overflow-hidden">
+                        <img src="images/blog1.jpg" class="card-img-top" alt="Blog 1">
+                        <div class="card-body p-4 bg-white">
+                            <small class="text-primary-custom fw-medium text-uppercase mb-2 d-block fs-7">Cooking Tips &bull; May 12, 2024</small>
+                            <h5 class="card-title fw-bold mb-3"><a href="#" class="text-dark text-decoration-none">The Secret to the Perfect Spices</a></h5>
+                            <p class="card-text text-muted small mb-4">Our Executive Chef shares his top tips for blending local spices to achieve that perfect authentic taste.</p>
+                            <a href="#" class="text-primary-custom text-decoration-none fw-medium fs-7 text-uppercase tracking-wide">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm blog-card rounded-3 overflow-hidden">
+                        <img src="images/blog2.jpg" class="card-img-top" alt="Blog 2">
+                        <div class="card-body p-4 bg-white">
+                            <small class="text-primary-custom fw-medium text-uppercase mb-2 d-block fs-7">Ingredients &bull; April 28, 2024</small>
+                            <h5 class="card-title fw-bold mb-3"><a href="#" class="text-dark text-decoration-none">Why Sourcing Locally Makes a Difference</a></h5>
+                            <p class="card-text text-muted small mb-4">Learn about our partnerships with local farmers and how fresh produce elevates every dish.</p>
+                            <a href="#" class="text-primary-custom text-decoration-none fw-medium fs-7 text-uppercase tracking-wide">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm blog-card rounded-3 overflow-hidden">
+                        <img src="images/blog3.jpg" class="card-img-top" alt="Blog 3">
+                        <div class="card-body p-4 bg-white">
+                            <small class="text-primary-custom fw-medium text-uppercase mb-2 d-block fs-7">Desserts &bull; April 15, 2024</small>
+                            <h5 class="card-title fw-bold mb-3"><a href="#" class="text-dark text-decoration-none">The Art of Making Watalappan</a></h5>
+                            <p class="card-text text-muted small mb-4">A behind-the-scenes look at how our pastry team creates edible masterpieces using pure kithul jaggery.</p>
+                            <a href="#" class="text-primary-custom text-decoration-none fw-medium fs-7 text-uppercase tracking-wide">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h3 class="font-heading mb-3 fs-2">Join Our Foodie Club!</h3>
+                    <p class="text-muted mb-4">Subscribe to receive exclusive recipes, wine pairing tips, and special event invitations.</p>
+                    <form class="d-flex position-relative newsletter-form">
+                        <i class="fa-regular fa-envelope position-absolute top-50 start-0 translate-middle-y ms-4 text-muted"></i>
+                        <input type="email" class="form-control rounded-pill ps-5 py-3 border-dark" placeholder="Your email address..." required style="padding-left: 3rem !important;">
+                        <button class="btn btn-dark rounded-pill px-4 py-2 position-absolute top-50 end-0 translate-middle-y me-1" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6 pe-lg-5">
+                    <a class="navbar-brand logo-text fs-2 fw-bold d-flex align-items-center text-white mb-3" href="#home">
+                        <i class="fa-solid fa-leaf text-primary-custom me-2 fs-3"></i> Ceylon Spice.
+                    </a>
+                    <p class="text-white-50 small mb-4 lh-lg">We provide an unforgettable culinary experience, blending classic Sri Lankan techniques with modern flavors in a stunning setting.</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 fs-6">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none small hover-white">About Us</a></li>
+                        <li class="mb-3"><a href="#menu" class="text-white-50 text-decoration-none small hover-white">Our Menu</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none small hover-white">Private Dining</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none small hover-white">Gift Cards</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none small hover-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 fs-6">Opening Hours</h5>
+                    <ul class="list-unstyled footer-links text-white-50 small lh-lg">
+                        <li class="mb-2 d-flex justify-content-between"><span>Monday - Friday</span> <span>11:00 AM - 10:00 PM</span></li>
+                        <li class="mb-2 d-flex justify-content-between"><span>Saturday</span> <span>10:00 AM - 11:30 PM</span></li>
+                        <li class="mb-2 d-flex justify-content-between"><span>Sunday</span> <span>10:00 AM - 9:00 PM</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 fs-6">Contact Info</h5>
+                    <ul class="list-unstyled text-white-50 small lh-lg">
+                        <li class="mb-3 d-flex"><i class="fa-solid fa-location-dot mt-1 me-3 text-primary-custom"></i> No 45, Galle Road, Colombo 03, LK</li>
+                        <li class="mb-3 d-flex"><i class="fa-solid fa-phone mt-1 me-3 text-primary-custom"></i> +94 11 2 345 678</li>
+                        <li class="mb-3 d-flex"><i class="fa-solid fa-envelope mt-1 me-3 text-primary-custom"></i> reserve@Ceylon Spice.lk</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top border-secondary pt-4 pb-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-white-50 small mb-3 mb-md-0">&copy; 2026 Ceylon Spice. All Rights Reserved.</p>
+                <div class="payment-icons fs-4 d-flex gap-3 text-white-50">
+                    <i class="fa-brands fa-cc-visa hover-white cursor-pointer"></i>
+                    <i class="fa-brands fa-cc-mastercard hover-white cursor-pointer"></i>
+                    <i class="fa-brands fa-cc-paypal hover-white cursor-pointer"></i>
+                    <i class="fa-brands fa-cc-amex hover-white cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <!-- Advanced Menu Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // View Toggle Logic
+            const gridBtn = document.getElementById('gridViewBtn');
+            const listBtn = document.getElementById('listViewBtn');
+            const tabContents = document.querySelectorAll('.tab-pane .row');
+            
+            if(gridBtn && listBtn) {
+                gridBtn.addEventListener('click', () => {
+                    gridBtn.className = 'btn btn-primary-custom';
+                    listBtn.className = 'btn btn-outline-secondary bg-white text-dark';
+                    tabContents.forEach(row => row.classList.remove('list-view-container'));
+                });
+                
+                listBtn.addEventListener('click', () => {
+                    listBtn.className = 'btn btn-primary-custom';
+                    gridBtn.className = 'btn btn-outline-secondary bg-white text-dark';
+                    tabContents.forEach(row => row.classList.add('list-view-container'));
+                });
+            }
+
+            // Scroll Reveal Animation
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
