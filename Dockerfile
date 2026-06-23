@@ -16,4 +16,5 @@ RUN chmod -R 755 /usr/share/nginx/html
 # Expose port 80 for web traffic
 EXPOSE 80
 
+# Start the Nginx server in the foreground
 CMD ["nginx", "-g", "daemon off;"]
