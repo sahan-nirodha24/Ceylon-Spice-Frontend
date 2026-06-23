@@ -27,7 +27,7 @@ This is a pure frontend application with no backend or database dependencies.
 ### Local Development
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Ceylon Spice-restaurant.git
+   git clone https://github.com/yourusername/Ceylon-Spice-Frontend.git
    ```
 2. Navigate to the project folder.
 3. Simply double-click `index.html` to open it in your browser, or use a tool like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code for a better development experience.
