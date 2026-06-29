@@ -1,5 +1,5 @@
 # Use the official, lightweight Nginx image from Docker Hub (Alpine Linux based)
-FROM nginx:alpine
+FROM nginx:1.31.2-alpine-slim
 
 # Add a custom maintainer label (Optional)
 LABEL maintainer="ceylon-spice-frontend"
